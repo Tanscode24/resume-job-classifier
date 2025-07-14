@@ -46,18 +46,30 @@ The overall structure of the project is shown below:
 ![Project Structure](images/project_structure_diagram.png.png)
 ---
 
-## How It Works
 
-1. **Load Data**: Import resume(s) and job descriptions from the CSV files.
-2. **Preprocess**: Clean and tokenize the text (remove stopwords, lemmatize).
-3. **TF-IDF Vectorization**: Represent text as numerical feature vectors.
-4. **Cosine Similarity**: Compare the resume vector with each job vector.
-5. **Rank & Recommend**: Output top-N most similar jobs for each resume.
+> 📌 **Visual Representation:**
+>
+> ![Project Structure](images/project_structure_diagram.png.png)
 
 ---
 
-## 🧪 Example
+## ⚙️ How It Works
+
+1. 📥 Load resume files (PDF or TXT)
+2. 🔠 Preprocess with tokenization & TF-IDF
+3. 🌲 Apply trained Random Forest classifier
+4. 📤 Return top job role predictions
+
+---
+
+## 🛠️ Installation
 
 ```bash
-$ python main.py
+
+git clone https://github.com/Tanscode24/resume-job-classifier.git
+cd resume-job-classifier
+pip install -r requirements.txt
+
+
+
 
