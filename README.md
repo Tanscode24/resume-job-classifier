@@ -31,6 +31,9 @@ resume-job-classifier/
 │
 └── README.md                    # Project documentation (you’re reading it!)
 
+### 📊 Project Structure (Visual)
+
+![Project Structure](project_structure_diagram.png)
 
 
 ---
