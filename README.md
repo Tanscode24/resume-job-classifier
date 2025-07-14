@@ -17,11 +17,11 @@ This project is an Information Retrieval (IR) based system that matches **resume
 
 ##Project Structure
 resume-job-classifier/
-│
-├── data/                        # Folder containing datasets
-│   └── jobs.csv                 # Job descriptions dataset
-│   └── resumes.csv              # Resume texts (optional or synthetic)
-│
+
+ data/                        # Folder containing datasets
+   └── jobs.csv                 # Job descriptions dataset
+   └── resumes.csv              # Resume texts (optional or synthetic)
+   
 ├── utils/                       # Utility functions for preprocessing
 │   └── preprocess.py            # Text cleaning and NLP steps
 │
@@ -30,6 +30,7 @@ resume-job-classifier/
 ├── requirements.txt             # List of required Python packages
 │
 └── README.md                    # Project documentation (you’re reading it!)
+
 
 ### 📊 Project Structure (Visual)
 
