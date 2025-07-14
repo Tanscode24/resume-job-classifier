@@ -45,14 +45,6 @@ The overall structure of the project is shown below:
 
 ![Project Structure](images/project_structure_diagram.png.png)
 ---
-
-
-> 📌 **Visual Representation:**
->
-> ![Project Structure](images/project_structure_diagram.png.png)
-
----
-
 ## ⚙️ How It Works
 
 1. 📥 Load resume files (PDF or TXT)
