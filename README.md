@@ -39,13 +39,11 @@ resume-job-classifier/
 ├── requirements.txt                  # List of Python dependencies
 └── README.md                         # Project documentation
 ```
-
-
 ### Project Structure (Visual)
 
+The overall structure of the project is shown below:
 
-
-
+![Project Structure](images/project_structure_diagram.png.png)
 ---
 
 ## How It Works
