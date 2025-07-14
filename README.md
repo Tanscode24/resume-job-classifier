@@ -33,7 +33,7 @@ resume-job-classifier/
 
 ### 📊 Project Structure (Visual)
 
-![Project Structure](project_structure_diagram.png)
+
 
 
 ---
