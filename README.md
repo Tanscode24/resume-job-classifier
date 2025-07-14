@@ -15,25 +15,35 @@ This project is an Information Retrieval (IR) based system that matches **resume
 
 ---
 
-##Project Structure
+###  Project Structure
+
+```text
 resume-job-classifier/
 │
-├── data/                        # Folder containing datasets
-│   └── jobs.csv                 # Job descriptions dataset
-│   └── resumes.csv              # Resume texts (optional or synthetic)
+├── dataset/                          # Folder containing input data files
+│   ├── jobs.csv                      # Dataset with job descriptions
+│   └── resumes.csv                   # Dataset with resume texts
 │
-├── utils/                       # Utility functions for preprocessing
-│   └── preprocess.py            # Text cleaning and NLP steps
+├── images/                           # Project assets like diagrams or icons
+│   └── project_structure_diagram.png # Visual tree of the project structure
 │
-├── main.py                      # Main script to run the matching pipeline
+├── models/                           # Folder for saving ML models (if any)
 │
-├── requirements.txt             # List of required Python packages
+├── templates/                        # HTML templates for web app (Flask/Streamlit)
 │
-└── README.md                    # Project documentation (you’re reading it!)
+├── utils/                            # Folder for utility and helper scripts
+│   └── preprocess.py                 # Script for text cleaning and NLP preprocessing
+│
+├── app.py                            # Web application script (entry point for GUI)
+├── ResumeCatogorization.py           # Core logic for matching resumes to jobs
+├── requirements.txt                  # List of Python dependencies
+└── README.md                         # Project documentation
+```
 
-### 📊 Project Structure (Visual)
 
-![Project Structure](project_structure_diagram.png)
+### Project Structure (Visual)
+
+
 
 
 ---

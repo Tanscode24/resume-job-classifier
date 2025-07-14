@@ -120,179 +120,181 @@
 
 </html>
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Screening AI</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Screening AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
 
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.7);
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.85);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
 
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 30px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: #ffffffd9;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
 
-        h1, h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-        h1 {
-            color: #00ffd5;
-            font-size: 2.5rem;
-        }
+    h1 {
+      color: #8E9AAF;
+      font-size: 2.5rem;
+    }
 
-        h2 {
-            color: #ffee58;
-        }
+    h2 {
+      color: #A593E0;
+      font-size: 1.8rem;
+    }
 
-        p, li {
-            color: #eee;
-            line-height: 1.6;
-        }
+    p, li {
+      color: #444;
+      line-height: 1.6;
+    }
 
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
 
-        ul li::before {
-            content: "✔ ";
-            color: #00ffd5;
-        }
+    ul li::before {
+      content: "✔ ";
+      color: #6BCB77;
+    }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        input[type="file"] {
-            margin: 15px 0;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            width: 100%;
-        }
+    input[type="file"] {
+      margin: 15px 0;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 100%;
+      background-color: #f9f9f9;
+    }
 
-        input[type="submit"] {
-            padding: 12px 30px;
-            background-color: #00ffd5;
-            color: #000;
-            border: none;
-            border-radius: 6px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s ease;
-        }
+    input[type="submit"] {
+      padding: 12px 30px;
+      background-color: #A8DADC;
+      color: #2B2D42;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
 
-        input[type="submit"]:hover {
-            background-color: #00bfa6;
-        }
+    input[type="submit"]:hover {
+      background-color: #89C2D9;
+    }
 
-        .header-img {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-            border-radius: 12px;
-            margin-bottom: 20px;
-        }
+    .header-img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
 
-        hr {
-            border: none;
-            height: 1px;
-            background-color: #ccc;
-            margin: 20px 0;
-        }
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #ddd;
+      margin: 20px 0;
+    }
 
-        .text-center {
-            text-align: center;
-        }
-    </style>
+    .text-center {
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="overlay">
-        <div class="container">
-            <img src="https://images.unsplash.com/photo-1573164574396-9d4b2f30efcc?auto=format&fit=crop&w=1600&q=80"
-                alt="AI Resume Scanner" class="header-img">
+  <div class="overlay">
+    <div class="container">
+      <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=1600&q=80"
+        alt="AI Resume Scanner" class="header-img" />
 
-            <h1>Resume Screening AI System</h1>
-            <p class="text-center">Upload your resume (.txt or .pdf) to get categorized, recommended, and parsed by our AI.</p>
+      <h1>Resume Screening AI System</h1>
+      <p class="text-center">Upload your resume (.txt or .pdf) to get categorized, recommended, and parsed by our AI.</p>
 
-            <ul>
-                <li>Resume Categorization</li>
-                <li>Job Recommendation</li>
-                <li>Resume Parsing (Name, Skills, Email, etc.)</li>
-            </ul>
-        </div>
-
-        <div class="container">
-            <h2>Upload Your Resume</h2>
-            <form action="/pred" method="post" enctype="multipart/form-data">
-                <input type="file" name="resume" accept=".pdf, .txt" required>
-                <input type="submit" value="Submit">
-            </form>
-
-            {% if message %}
-            <p class="text-center">{{ message }}</p>
-            {% endif %}
-
-            {% if predicted_category %}
-            <hr>
-            <p class="text-center"><strong>Category:</strong> {{ predicted_category }}</p>
-            <p class="text-center"><strong>Recommended Job:</strong> {{ recommended_job }}</p>
-            <hr>
-            <h2 class="text-center">Extracted Information</h2>
-            <p class="text-center"><strong>Name:</strong> {{ name }}</p>
-            <p class="text-center"><strong>Phone No:</strong> {{ phone }}</p>
-            <p class="text-center"><strong>Email:</strong> {{ email }}</p>
-
-            {% if extracted_skills %}
-            <p class="text-center"><strong>Skills:</strong></p>
-            <ul class="text-center">
-                {% for skill in extracted_skills %}
-                <li>{{ skill }}</li>
-                {% endfor %}
-            </ul>
-            {% else %}
-            <p class="text-center">No skills found.</p>
-            {% endif %}
-
-            {% if extracted_education %}
-            <h2 class="text-center">Education</h2>
-            <ul class="text-center">
-                {% for edu in extracted_education %}
-                <li>{{ edu }}</li>
-                {% endfor %}
-            </ul>
-            {% else %}
-            <p class="text-center">No education found.</p>
-            {% endif %}
-            {% endif %}
-        </div>
+      <ul>
+        <li>Resume Categorization</li>
+        <li>Job Recommendation</li>
+        <li>Resume Parsing (Name, Skills, Email, etc.)</li>
+      </ul>
     </div>
+
+    <div class="container">
+      <h2>Upload Your Resume</h2>
+      <form action="/pred" method="post" enctype="multipart/form-data">
+        <input type="file" name="resume" accept=".pdf, .txt" required />
+        <input type="submit" value="Submit" />
+      </form>
+
+      {% if message %}
+      <p class="text-center">{{ message }}</p>
+      {% endif %}
+
+      {% if predicted_category %}
+      <hr />
+      <p class="text-center"><strong>Category:</strong> {{ predicted_category }}</p>
+      <p class="text-center"><strong>Recommended Job:</strong> {{ recommended_job }}</p>
+      <hr />
+      <h2 class="text-center">Extracted Information</h2>
+      <p class="text-center"><strong>Name:</strong> {{ name }}</p>
+      <p class="text-center"><strong>Phone No:</strong> {{ phone }}</p>
+      <p class="text-center"><strong>Email:</strong> {{ email }}</p>
+
+      {% if extracted_skills %}
+      <p class="text-center"><strong>Skills:</strong></p>
+      <ul class="text-center">
+        {% for skill in extracted_skills %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="text-center">No skills found.</p>
+      {% endif %}
+
+      {% if extracted_education %}
+      <h2 class="text-center">Education</h2>
+      <ul class="text-center">
+        {% for edu in extracted_education %}
+        <li>{{ edu }}</li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="text-center">No education found.</p>
+      {% endif %}
+      {% endif %}
+    </div>
+  </div>
 </body>
 
 </html>
